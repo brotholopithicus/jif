@@ -1,0 +1,15 @@
+{
+    "dependencies": {
+        "gifshot": "^0.3.2"
+    },
+    "scripts": {
+        "start": "browser-sync start --server --files '*.css, *.html, *.js' | watchify ./src/index.js -o ./bundle.js",
+        "prestart": "yarn build",
+        "build": "browserify ./src/index.js -o ./bundle.js"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.8",
+        "browserify": "^14.1.0",
+        "watchify": "^3.9.0"
+    }
+}

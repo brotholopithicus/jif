@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>photobooth</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- <button class="start">Start</button> -->
+	<div class="container">
+		<header>
+			<h1>pHoToBoOtH</h1>
+		</header>
+		<section class="main">
+			<video class="player"></video>
+			<canvas id="canvas"></canvas>
+		</section>
+		<footer>
+			<div class="buttons">
+				<button class="takePhoto">Take Photo</button>
+				<!-- <button class="recordVideo">Record Video</button> -->
+				<button class="clearStrip">Clear Photos</button>
+				<button class="makeGIF">Image Gif</button>
+			</div>
+			<div class="strip"></div>
+		</footer>
+	</div>
+	<audio class="snap" src="snap.mp3" hidden></audio>
+	<script src="bundle.js"></script>
+</body>
+
+</html>
